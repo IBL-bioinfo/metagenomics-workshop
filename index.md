@@ -75,29 +75,14 @@ were we will be happy to help you!
 >
 {: .prereq}
 
-> ## Data
-> 
-> This workshop uses data from the environmental experiment: [Genomic adaptations in information 
-> processing underpins trophic strategy in a whole-ecosystem nutrient 
-> enrichment experiment](https://elifesciences.org/articles/49816), by Jordan G Okie et al.
-> In this research, authors compared the differences between the microbial community 
-> in its natural, oligotrophic, phosphorus-deficient 
->environment, a pond from the Cuatro Ciénegas Basin (CCB), and the same microbial 
->community under a fertilization treatment.
->
-> All of the data used in this workshop can be downloaded from
-> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7010950.svg)](https://doi.org/10.5281/zenodo.7010950)
-> More information about this data is available on the [Data page](https://carpentries-lab.github.io/metagenomics-workshop/data/index.html).
-{: .prereq} 
-
 # Workshop Overview 
 
 | Lesson    | Overview | Estimated time|
 | ------- | ---------- | ---------- |
-| [Project Organization and Management](https://carpentries-incubator.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
-| [Introduction to the Command Line](https://carpentries-incubator.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
-|[Introduction to R](https://carpentries-incubator.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and structures. | 1:00 hr| 
-|[Data Processing and Visualization for Metagenomics](https://carpentries-incubator.github.io/metagenomics/) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
+| [Project Organization and Management](organization/index.html) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
+| [Introduction to the Command Line](shell/index.html) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
+|[Introduction to R](r-intro/index.html) | Use R studio to manage several data types and structures. | 1:00 hr| 
+|[Data Processing and Visualization for Metagenomics](analysis/index.html) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
 
 <!--
 # Optional Additional Lessons

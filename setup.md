@@ -61,7 +61,7 @@ page linked below for information about the data and access to the data files. B
 with real data, be aware that file sizes for the data are large.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
-More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-lab.github.io/metagenomics-analysis/01-background-metadata/index.html).
+More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](analysis/01-background-metadata/).
 
 
 #### **Install a Bash terminal** 

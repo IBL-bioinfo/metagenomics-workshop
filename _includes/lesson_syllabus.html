@@ -1,0 +1,23 @@
+{% comment %}
+  Schedule table for one lesson. Usage: {% include lesson_syllabus.html collection="shell" %}
+  Lists the episodes of the named collection with their questions.
+{% endcomment %}
+
+{% include base_path.html %}
+
+{% assign episodes = site[include.collection] %}
+
+<table class="table table-striped">
+  {% for episode in episodes %}
+  <tr>
+    <td class="col-md-4">
+      {{ forloop.index }}. <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
+    </td>
+    <td class="col-md-8">
+      {% for question in episode.questions %}
+      {{ question | markdownify | strip_html }}{% unless forloop.last %}<br/>{% endunless %}
+      {% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

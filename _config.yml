@@ -66,6 +66,20 @@ collections:
   extras:
     output: true
     permalink: /:path/index.html
+  # The four lessons of the workshop. Each lesson is its own collection, with
+  # its home page and figures in the folder of the same name (e.g. shell/).
+  organization:
+    output: true
+    permalink: /:collection/:path/index.html
+  shell:
+    output: true
+    permalink: /:collection/:path/index.html
+  r-intro:
+    output: true
+    permalink: /:collection/:path/index.html
+  analysis:
+    output: true
+    permalink: /:collection/:path/index.html
 
 # Set the default layout for things in the episodes collection.
 defaults:
@@ -84,6 +98,40 @@ defaults:
     values:
       root: ..
       layout: page
+  # Lesson episodes: root is the lesson folder (where fig/ and files/ live);
+  # lesson_home and lesson_title are used by _includes/episode_navbar.html.
+  - scope:
+      path: ""
+      type: organization
+    values:
+      root: ..
+      layout: episode
+      lesson_home: /organization/
+      lesson_title: "Project Organization and Management"
+  - scope:
+      path: ""
+      type: shell
+    values:
+      root: ..
+      layout: episode
+      lesson_home: /shell/
+      lesson_title: "Introduction to the Command Line"
+  - scope:
+      path: ""
+      type: r-intro
+    values:
+      root: ..
+      layout: episode
+      lesson_home: /r-intro/
+      lesson_title: "Introduction to R"
+  - scope:
+      path: ""
+      type: analysis
+    values:
+      root: ..
+      layout: episode
+      lesson_home: /analysis/
+      lesson_title: "Data Processing and Visualization for Metagenomics"
 
 # Files and directories that are not to be copied.
 exclude:
