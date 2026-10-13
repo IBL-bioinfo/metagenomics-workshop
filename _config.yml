@@ -108,6 +108,8 @@ defaults:
       layout: episode
       lesson_home: /organization/
       lesson_title: "Project Organization and Management"
+      next_lesson_home: /shell/
+      next_lesson_title: "Introduction to the Command Line"
   - scope:
       path: ""
       type: shell
@@ -116,6 +118,8 @@ defaults:
       layout: episode
       lesson_home: /shell/
       lesson_title: "Introduction to the Command Line"
+      next_lesson_home: /r-intro/
+      next_lesson_title: "Introduction to R"
   - scope:
       path: ""
       type: r-intro
@@ -124,6 +128,8 @@ defaults:
       layout: episode
       lesson_home: /r-intro/
       lesson_title: "Introduction to R"
+      next_lesson_home: /analysis/
+      next_lesson_title: "Data Processing and Visualization for Metagenomics"
   - scope:
       path: ""
       type: analysis
