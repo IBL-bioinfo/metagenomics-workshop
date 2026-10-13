@@ -204,15 +204,15 @@ From the `nano` screen, you can use your cursor to navigate, type, and delete an
 > Although `nano` is useful, it can be frustrating to edit documents, as you 
 > can't use your mouse to navigate to the part of the document you would like to edit.
 > Here are some useful keyboard shortcuts for moving around within a text document in 
-> `nano`. You can find more information by typing <kbd>Ctrl</kbd>-<kbd>G</kbd> within `nano`.
+> `nano`. You can find more information by typing <kbd>Ctrl</kbd>-<kbd>G</kbd> (or <kbd>F1</kbd>) within `nano`.
 > 
-> | key     | action |
-> | ------- | ---------- |
-> | <kbd>Ctrl</kbd>-<kbd>Space</kbd> | to move forward one word |
-> | <kbd>Alt</kbd>-<kbd>Space</kbd> | to move back one word |
-> | <kbd>Ctrl</kbd>-<kbd>A</kbd> | to move to the beginning of the current line |
-> | <kbd>Ctrl</kbd>-<kbd>E</kbd> | to move to the end of the current line |
-> | <kbd>Ctrl</kbd>-<kbd>W</kbd> | to search |
+> | key     | backup | action |
+> | ------- | ------ | ---------- |
+> | <kbd>Ctrl</kbd>-<kbd>Space</kbd> | – | to move forward one word |
+> | <kbd>Alt</kbd>-<kbd>Space</kbd> | – | to move back one word |
+> | <kbd>Ctrl</kbd>-<kbd>A</kbd> | <kbd>Home</kbd> | to move to the beginning of the current line |
+> | <kbd>Ctrl</kbd>-<kbd>E</kbd> | <kbd>End</kbd> | to move to the end of the current line |
+> | <kbd>Ctrl</kbd>-<kbd>W</kbd> | <kbd>F6</kbd> | to search |
 > 
 {: .callout}
                                       

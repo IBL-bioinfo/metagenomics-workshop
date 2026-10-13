@@ -95,10 +95,10 @@ Let us type in a few lines of text. Describe the files in this directory or what
 <em> Figure 2. For example, the README file is written in nano. <em/>
     
 Once we are happy with our text, we can press <kbd>Ctrl</kbd>-<kbd>O</kbd> (press the <kbd>Ctrl</kbd> or <kbd>Control</kbd> key and, while
-holding it down, press the <kbd>O</kbd> key) to write our data to disk. You will be asked what file we want to save this to:
+holding it down, press the <kbd>O</kbd> key) to write our data to disk. If this does not work, press <kbd>F3</kbd> instead. You will be asked what file we want to save this to:
 Press <kbd>Return</kbd> to accept the suggested default of `README.txt`.
 
-Once our file is saved, we can use <kbd>Ctrl</kbd>-<kbd>X</kbd> to quit the editor and
+Once our file is saved, we can use <kbd>Ctrl</kbd>-<kbd>X</kbd> (or <kbd>F2</kbd>) to quit the editor and
 return to the shell.
 
 > ## Control, Ctrl, or ^ Key
@@ -120,6 +120,21 @@ return to the shell.
 > file.
 {: .callout}
 
+> ## If the Ctrl shortcuts do not work
+>
+> Sometimes the <kbd>Ctrl</kbd> shortcuts do not reach `nano`, for instance because the browser uses them for
+> something else. The most important `nano` commands have a function key as a backup:
+>
+> | action | Ctrl shortcut | backup |
+> | ------ | ------------- | ------ |
+> | Get Help | <kbd>Ctrl</kbd>-<kbd>G</kbd> | <kbd>F1</kbd> |
+> | Write Out (save the file) | <kbd>Ctrl</kbd>-<kbd>O</kbd> | <kbd>F3</kbd> |
+> | Where Is (search) | <kbd>Ctrl</kbd>-<kbd>W</kbd> | <kbd>F6</kbd> |
+> | Exit | <kbd>Ctrl</kbd>-<kbd>X</kbd> | <kbd>F2</kbd> |
+>
+> On a laptop, you may have to hold the <kbd>Fn</kbd> key while pressing a function key.
+{: .callout}
+
 Now you have written a file. You can look at it with `less` or `cat`, or open it up again and edit it with `nano`.
 
 > ## Exercise 1: Edit a file with nano
@@ -130,7 +145,7 @@ Now you have written a file. You can look at it with `less` or `cat`, or open it
 > > 
 > > ~~~
 > > Use `nano README.txt` to open the file.  
-> > Add today's date and then use <kbd>Ctrl</kbd>-<kbd>X</kbd> to exit and `y` to save.
+> > Add today's date and then use <kbd>Ctrl</kbd>-<kbd>X</kbd> (or <kbd>F2</kbd>) to exit and `y` to save.
 > >
 > > ~~~
 > > {: .bash}
