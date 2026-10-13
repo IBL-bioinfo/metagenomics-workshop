@@ -49,7 +49,6 @@ JC1A.kraken  JC1A.report  JP41.report  JP4D.kraken  JP4D.report  mags_taxonomy
 
 The `kraken-biom` program is installed inside our `scbioenv` environment, so let us activate it.
 ~~~
-$ module load Miniconda3
 $ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/scbioenv
 ~~~
 {: .bash}

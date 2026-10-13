@@ -186,18 +186,17 @@ it in order to start using FastQC.
 We will use [Conda](https://docs.conda.io/en/latest/) as our environment manager. 
 Conda is an open-source package and environment management system that runs on Windows, 
 macOS and Linux. On ALICE, Conda is available as a *module*, so first we need to load the module `Miniconda3` 
-in the RStudio terminal:
+in the RStudio terminal, and prepare our shell to use it with `conda init`:
 ~~~
 $ module load Miniconda3
+$ conda init
 ~~~
 {: .bash}
 
-Then we restart the terminal. Close it by typing `exit` and pressing <kbd>Enter</kbd>, and open a new one with 
-*Tools* > *Terminal* > *New Terminal* (or press <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
-
-In the new terminal, load the module `Miniconda3` again:
+`conda init` asks us to close and re-open the shell for the changes to take effect. We can restart the shell 
+with `exec bash`. The module stays loaded:
 ~~~
-$ module load Miniconda3
+$ exec bash
 ~~~
 {: .bash}
 
