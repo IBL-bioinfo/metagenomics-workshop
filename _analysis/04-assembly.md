@@ -116,10 +116,11 @@ Input data:
 {: .output}
 
 > ## Activate your environment
-> If you do not have the metagenomics environment activated, the previous command should have given you an error. 
-> Before you proceed, activate the environment:
+> If you do not have the course environment activated, the previous command should have given you an error. 
+> Before you proceed, load the module and activate the environment:
 > ~~~
-> conda activate metagenomics
+> module load Miniconda3
+> conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/scbioenv
 > ~~~
 > {: .language-bash}
 {: .callout}

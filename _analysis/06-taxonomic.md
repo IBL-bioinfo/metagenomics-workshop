@@ -65,8 +65,8 @@ the organisms in the sample.
 
 [Kraken 2](https://ccb.jhu.edu/software/kraken2/) is the newest version of Kraken, 
 a taxonomic classification system using exact k-mer matches to achieve 
-high accuracy and fast classification speeds. `kraken2` is already installed in the **metagenomics
-environment**, let us have a look at `kraken2` help.  
+high accuracy and fast classification speeds. `kraken2` is already installed in the **course
+environment** (`scbioenv`), let us have a look at `kraken2` help.  
  
 ~~~  
 $ kraken2  --help

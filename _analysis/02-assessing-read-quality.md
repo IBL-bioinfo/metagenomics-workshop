@@ -177,25 +177,38 @@ Later in our workflow, we'll use another program to filter out poor-quality read
 
 First, let's make available our metagenomics software:
 
-## Activating an environment  
+$## Activating an environment  
 Environments are part of a bioinformatic tendency to do reproducible research; they are a way to share and maintain our programs in their needed versions used for a pipeline with 
-our colleagues and our future self. FastQC has not been activated in the (base) environment, but 
-this AWS instance came with an environment called metagenomics. We need to activate 
+our colleagues and our future self. FastQC is not available by default, but 
+ALICE has an environment prepared for this course. We need to activate 
 it in order to start using FastQC. 
 
 We will use [Conda](https://docs.conda.io/en/latest/) as our environment manager. 
 Conda is an open-source package and environment management system that runs on Windows, 
-macOS and Linux. Conda environments are activated with the `conda activate` direction:  
+macOS and Linux. On ALICE, Conda is available as a *module*, so first we need to load the module `Miniconda3` 
+in the RStudio terminal:
 ~~~
-$ conda activate metagenomics  
+$ module load Miniconda3
 ~~~
 {: .bash}
 
-After the environment has been activated, a label is shown before the `$` sign.
+Then we restart the terminal. Close it by typing `exit` and pressing <kbd>Enter</kbd>, and open a new one with 
+*Tools* > *Terminal* > *New Terminal* (or press <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
+
+In the new terminal, load the module `Miniconda3` again:
 ~~~
-(metagenomics) $
+$ module load Miniconda3
 ~~~
-{: .output}
+{: .bash}
+
+Conda environments are activated with the `conda activate` direction. The environment of this course is located in 
+a shared directory on ALICE, so we activate it by giving its path:  
+~~~
+$ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/scbioenv
+~~~
+{: .bash}
+
+After the environment has been activated, a label is shown before the prompt.
 
 Now, if we call FastQC, a long help page will be displayed on our screen.
 
@@ -230,7 +243,7 @@ If FastQC is not installed, then you would expect to see an error like
 
 ~~~
 The program 'fastqc' is currently not installed. You can install it by typing:
-sudo apt-get install fastqc
+sudo dnf install fastqc
 ~~~
 {: .error}
 
