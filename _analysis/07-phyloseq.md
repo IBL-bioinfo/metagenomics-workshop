@@ -94,6 +94,15 @@ taxonomic-data.
 
 ## Creating and manipulating Phyloseq objects
 
+> ## Switch to the Console tab
+>
+> So far we have been typing Bash commands in the **Terminal** tab. From here on, all commands are R code
+> (they start with the `>` prompt), and they must be run in the **Console** tab, which sits right next to
+> the Terminal tab in the bottom-left panel of RStudio. If you paste R code into the Terminal, Bash will not understand it
+> and you will get errors such as `command not found`.
+>
+{: .callout}
+
 ### Load required packages  
 
 Phyloseq is a library with tools to analyze and plot your metagenomics samples' taxonomic assignment and abundance information. The [phyloseq](https://joey711.github.io/phyloseq/) library and the other libraries required for its execution are already installed. We only have to make them available for this R session. Now load the libraries (a process needed every time we begin a new work session in R):
