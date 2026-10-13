@@ -13,7 +13,7 @@ Carpentry workshop,
 > - contributing to the Metagenomics lessons,
 > 
 > The Carpentries staff will create AMI instances for you. Please contact
-> team@carpentries.org. 
+> [docs.ibl.bio](https://docs.ibl.bio). 
 > 
 > **If you are:**
 > 

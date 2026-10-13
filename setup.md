@@ -42,7 +42,7 @@ If you are not in a Data Carpentry Workshop, the software you need is listed in 
 
 Follow these [instructions on creating an Amazon instance](https://carpentries-lab.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-028155394f1e36b0d` named `The Carpentries Lab Metagenomics v1.0` listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type, is very low (about USD $2.00 per user per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate without guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
-If you're an Instructor or Maintainer or want to contribute to these lessons, don't hesitate to contact us at [team@carpentries.org](mailto:team@carpentries.org), and we will start instances for you. 
+If you're an Instructor or Maintainer or want to contribute to these lessons, don't hesitate to contact us at [docs.ibl.bio](https://docs.ibl.bio), and we will start instances for you. 
 
 In this instance, you can use the terminal available in RStudio, and users won't need
 to install their terminals or use `ssh` (see [Instructor Notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html)). **If, nevertheless, you

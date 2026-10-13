@@ -115,7 +115,7 @@ they can take it from here.
 
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS) instances. See the 
 [Setup page](https://carpentries-lab.github.io/metagenomics-workshop/setup.html) for complete setup instructions. If you are
-teaching these lessons, and would like an AWS instance to practice on, please contact [team@carpentries.org](mailto: team@carpentries.org).
+teaching these lessons, and would like an AWS instance to practice on, please contact [docs.ibl.bio](https://docs.ibl.bio).
 
 ## Common problems
 This workshop introduces an analysis pipeline, where each step in 

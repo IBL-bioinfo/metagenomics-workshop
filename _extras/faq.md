@@ -37,7 +37,7 @@ Anyone who has experience using the Bash shell, R and RStudio can be an effectiv
 
 ### Does the AWS image location matter? Do I need to set up an AMI in a different region if my workshop will be held outside of the Eastern US?
 
-We have run this workshop in locations across the United States and Europe with no noticeable difference in instance speed. If you experience any issues, please [let us know](mailto:team@carpentries.org).
+We have run this workshop in locations across the United States and Europe with no noticeable difference in instance speed. If you experience any issues, please [let us know](https://docs.ibl.bio).
 
 ### Where can I find more information about this workshop?
 For a full description of this workshop, including what content is covered, and what dataset we use to teach, visit the [Metagenomics Workshop Overview](https://carpentries-incubator.github.io/metagenomics-workshop/) page. 
@@ -54,7 +54,7 @@ Each lesson has a set of Instructor Notes that provide information about the des
 
 ### When will I have access to an AWS image to practice on?
 
-Each Instructor will receive connection information for an AMI instance approximately one week before the workshop. If you would like workshop helpers to also have access to an instance to prepare for the workshop, or if you would like access more than one week in advance of the workshop, please contact [team@carpentries.org](mailto:team@carpentries.org).
+Each Instructor will receive connection information for an AMI instance approximately one week before the workshop. If you would like workshop helpers to also have access to an instance to prepare for the workshop, or if you would like access more than one week in advance of the workshop, please contact [docs.ibl.bio](https://docs.ibl.bio).
 
 ### How will my learners get connection and log-in information? 
 
@@ -66,7 +66,7 @@ The best place to get information about common problems that arise during worksh
 
 ### Does the AWS image location matter? Do I need to set up an AMI in a different region if my workshop will be held outside of the Eastern US?
 
-We have run this workshop in locations across the United States and Europe with no noticeable difference in instance speed. If you experience any issues, please [let us know](team@carpentries.org).
+We have run this workshop in locations across the United States and Europe with no noticeable difference in instance speed. If you experience any issues, please [let us know](https://docs.ibl.bio).
 
 # Reference
 This notes are adapted from the Data Carpentry Genomics Workshop [corresponding page](https://datacarpentry.org/genomics-workshop/faq/index.html)
