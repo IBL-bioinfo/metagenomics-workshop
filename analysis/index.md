@@ -48,3 +48,13 @@ Episodes 2. Assessing Read Quality, and 3. Trimming and Filtering are adapted fr
 ## Schedule
 
 {% include lesson_syllabus.html collection="analysis" %}
+
+## Extras
+
+Additional material that is not part of the main schedule:
+
+- [Amplicon metagenomics](extras/amplicon.html)
+- [Reconstrucción de Genomas a partir de Metagenomas (MAGs)](extras/ImprovingMAG.html)
+- [Binning, Refinamiento y Desreplicación](extras/BinningRefinmentDereplication.html)
+- [Clasificación taxonómica y Metabolismo](extras/MAGsTaxonomyMetabolism.html)
+- [Discussion](extras/discuss.html)
