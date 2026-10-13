@@ -95,19 +95,7 @@ taxonomic-data.
 
 ### Load required packages  
 
-Phyloseq is a library with tools to analyze and plot your metagenomics samples' taxonomic assignment and abundance information. Let us install [phyloseq](https://joey711.github.io/phyloseq/) (This instruction might not work on specific versions of R) and other libraries required for its execution:  
-
-~~~
-> if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-
-> BiocManager::install("phyloseq") # Install phyloseq
-
-> install.packages(c("RColorBrewer", "patchwork")) #install patchwork to chart publication-quality plots and readr to read rectangular datasets.
-~~~
-{: .language-r}  
-
-Once the libraries are installed, we must make them available for this R session. Now load the libraries (a process needed every time we begin a new work session in R):
+Phyloseq is a library with tools to analyze and plot your metagenomics samples' taxonomic assignment and abundance information. The [phyloseq](https://joey711.github.io/phyloseq/) library and the other libraries required for its execution are already installed. We only have to make them available for this R session. Now load the libraries (a process needed every time we begin a new work session in R):
 
 ~~~
 > library("phyloseq")

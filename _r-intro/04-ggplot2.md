@@ -6,7 +6,7 @@ questions:
 - "How can I create useful graphs in R?"
 objectives:
 - "Create figures using ggplot2."
-- "Install and use libraries in R."
+- "Load and use libraries in R."
 keypoints:
 - "The library `ggplot2` creates plots that help/remarks the data analysis."
 - "Creativity is welcome to explore and present your data."
@@ -20,13 +20,7 @@ Until now, we have used the basal functions included in the R language. But, R c
 implement a set of related tasks. Installing a package is like buying a new piece of lab equipment. Loading a package is like getting that piece of lab equipment out of a storage locker and setting it up in the working space. Packages provide additional functionality to the basic R code, much like a new piece 
 of equipment adds functionality to a lab space. R has its own [base plotting system](https://www.statmethods.net/graphs/index.html), but we will use a package that will help us to create more artistic figures:[ggplot2](https://www.statmethods.net/advgraphs/ggplot2.html).
 
-Let's install the ggplot2 library.
-~~~
-> install.packages("ggplot2")
-~~~
-{: .language-r}
-
-Now that it is installed we have to load it. It is a good practice to load all the libraries that you will use in a script at the beginning of that script.
+The ggplot2 library is already installed for this workshop, so we only have to load it. It is a good practice to load all the libraries that you will use in a script at the beginning of that script.
 ~~~
 library(ggplot2)
 ~~~

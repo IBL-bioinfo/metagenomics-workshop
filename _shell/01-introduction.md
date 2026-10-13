@@ -82,8 +82,7 @@ In this lesson you will learn how to use the command line interface to move arou
 ## How to access the shell
 
 On a Mac or Linux machine, you can access a shell through a program called Terminal, which is already available
-on your computer. If you're using Windows, you'll need to download a separate program to access the shell (see installation instructions [here](../../setup.html)).
-
+on your computer.
 In this workshop, we suggest using a remote server, to invest most of our time learning the basics of shell by manipulating some experimental data, instead of dealing with installations. The remote server already includes the required bioinformatics packages as well as the large datasets that usually take a lot of time to load into everyone's local computers.
 
 ### Logging in to ALICE
