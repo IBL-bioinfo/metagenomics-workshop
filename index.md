@@ -70,8 +70,6 @@ were we will be happy to help you!
 >
 > More details are in the
 > [ALICE documentation](https://pubappslu.atlassian.net/wiki/spaces/HPCWIKI/pages/37749098/Accessing+ALICE+or+SHARK+with+a+web-browser+using+Open+OnDemand#For-ALICE-users).
-> If eduVPN is not an option, you can instead connect to `nodelogin03` or `nodelogin04`
-> via RDP and open the same address in Firefox there.
 >
 {: .prereq}
 

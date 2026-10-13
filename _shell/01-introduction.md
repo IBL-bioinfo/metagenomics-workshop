@@ -20,6 +20,36 @@ keypoints:
 - "Tab completion can reduce errors from mistyping and make work more efficient in the shell."
 ---
 
+> ## Stop! Read first, then type
+> {: style="font-size: 36px; background: #bd2c00; color: #fff;"}
+>
+> **Do not copy and paste commands. Read each command, understand what it does, and type it yourself.**
+> {: style="font-size: 26px; line-height: 1.3; color: #bd2c00;"}
+>
+> Copy-pasting will fail in some cases, for example when:
+> {: style="font-size: 20px;"}
+>
+> * the command contains a name that belongs to one person or one machine, such as a username or
+>   a file name, that you have to replace with your own;
+> * you also copy the `$` at the start of the line. That is the prompt, and it must never be typed;
+> * the copied text contains look-alike characters (a typographic dash instead of `-`, curly quotes
+>   instead of `"`) that the shell does not understand.
+> {: style="font-size: 18px;"}
+>
+> **Look closely: a lowercase letter L and the digit one look almost the same in this font.**
+> {: style="font-size: 24px; line-height: 1.3; color: #bd2c00;"}
+>
+> | What you see | What it is | Where you will meet it |
+> |:------------:|:-----------|:-----------------------|
+> | <span style="font-size: 48px; font-family: Consolas, 'Courier New', monospace;">l</span> | the **letter L**, in lowercase ("el") | `ls -l`, `wc -l`, `less` |
+> | <span style="font-size: 48px; font-family: Consolas, 'Courier New', monospace;">1</span> | the **digit one** | `JC1A_R1.fastq` |
+>
+> If you get `command not found` or `No such file or directory`, check first whether you
+> mixed up a lowercase L and a one. If you cannot tell them apart on your screen, zoom the page in
+> (<kbd>Ctrl</kbd> + <kbd>+</kbd>, or <kbd>Cmd</kbd> + <kbd>+</kbd> on a Mac).
+> {: style="font-size: 18px;"}
+{: .callout style="border: 5px solid #bd2c00; background-color: #fff3f0;"}
+
 ## What is a shell and why should I care?
 
 A *shell* is a computer program that presents a command line interface
@@ -56,63 +86,68 @@ on your computer. If you're using Windows, you'll need to download a separate pr
 
 In this workshop, we suggest using a remote server, to invest most of our time learning the basics of shell by manipulating some experimental data, instead of dealing with installations. The remote server already includes the required bioinformatics packages as well as the large datasets that usually take a lot of time to load into everyone's local computers.
 
-> ## Shell alternatives
-> 
-> In case you decide to follow the lesson on your computer, you won't need to use `ssh` command because you will not connect to a remote machine.  
-> If you are working on a remote machine that includes RStudio (which you will open in a browser) you can work in the terminal that is included in RStudio.
->
-{: .callout}
+### Logging in to ALICE
 
-Ask your instructor for the `ip_address` and password to login.
+If you are following this workshop on the ALICE HPC cluster of Leiden University, you
+work through the Open OnDemand web portal and use the terminal that is included in RStudio.
+The portal is not directly reachable from
+the internet, so first connect to the university network with eduVPN.
 
-To log in you need the `ssh` command (ssh stands for Secure Shell), your username and the adress of the machine you are logging into.
-~~~
-$ ssh dcuser@ec2-18-702-132-236.compute-1.amazonaws.com
-~~~
-{: .bash}
+1. **Connect with eduVPN.** Install eduVPN (from the Company Portal on a managed laptop,
+   or from [eduvpn.org](https://www.eduvpn.org)), choose *Leiden University*, sign in with
+   your ULCN account, and make sure the connection is active.
 
-Then you are prompted to type the password. Take into account that while you are typing a password no characters will appear on the screen, trust that they are being typed and press enter. 
+   <a href="{{ page.root }}/../fig/alice_login_1_eduvpn.png">
+     <img src="{{ page.root }}/../fig/alice_login_1_eduvpn.png" alt="eduVPN window showing an active connection to Leiden University" />
+   </a>
 
-After logging in, you will see a screen showing something like this: 
+2. **Log in to the portal.** In your browser go to
+   [https://ood.alice.universiteitleiden.nl/](https://ood.alice.universiteitleiden.nl/)
+   and enter your ALICE username and password.
 
-~~~
-Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
+   <a href="{{ page.root }}/../fig/alice_login_2_ondemand.png">
+     <img src="{{ page.root }}/../fig/alice_login_2_ondemand.png" alt="Open OnDemand login page asking for ALICE username and password" />
+   </a>
 
- * Documentation:  https://help.ubuntu.com/
+3. **Start RStudio.** In the top menu choose *Interactive Apps* > *RStudio Server GPU IBL*.
 
-  System information as of Sat Feb  2 00:08:17 UTC 2019
+   <a href="{{ page.root }}/../fig/alice_rstudio_1_menu.png">
+     <img src="{{ page.root }}/../fig/alice_rstudio_1_menu.png" alt="ALICE OnDemand Interactive Apps menu with RStudio Server GPU IBL highlighted" />
+   </a>
 
-  System load: 0.0                Memory usage: 5%   Processes:       82
-  Usage of /:  29.9% of 98.30GB   Swap usage:   0%   Users logged in: 0
+   In the form that opens, make sure *Additional modules* contains
+   `R-bundle-CRAN R-bundle-Bioconductor/3.22-foss-2025b-R-4.5.2`, and leave the
+   *RStudio Server Version* and the *Slurm Partition* (`gpu_ibl`) as they are.
 
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
+   <a href="{{ page.root }}/../fig/alice_rstudio_2_app_form.png">
+     <img src="{{ page.root }}/../fig/alice_rstudio_2_app_form.png" alt="RStudio Server GPU IBL form with the RStudio version, the additional modules and the Slurm partition gpu_ibl" />
+   </a>
 
-  Get cloud support with Ubuntu Advantage Cloud Guest:
-    http://www.ubuntu.com/business/services/cloud
+   Further down, set *Number of CPUs per task* to `2` and *Memory in GB* to `16`.
 
-597 packages can be updated.
-444 updates are security updates.
+   <a href="{{ page.root }}/../fig/alice_rstudio_3_resources.png">
+     <img src="{{ page.root }}/../fig/alice_rstudio_3_resources.png" alt="RStudio Server GPU IBL form with 2 CPUs per task and 16 GB of memory" />
+   </a>
 
-New release '16.04.5 LTS' available.
-Run 'do-release-upgrade' to upgrade to it.
+   Then click *Launch* at the bottom of the form. When your session is *Running*, click
+   *Connect to RStudio Server*.
 
+4. **Open the terminal.** RStudio opens in your browser with the *Console* in front.
+   Click the *Terminal* tab, circled in red below.
 
-Last login: Fri Feb  1 22:34:53 2019 from c-73-116-43-163.hsd1.ca.comcast.net
-~~~
-{: .output}
+   <a href="{{ page.root }}/../fig/alice_rstudio_4_terminal_tab.png">
+     <img src="{{ page.root }}/../fig/alice_rstudio_4_terminal_tab.png" alt="RStudio showing the Console, with the Terminal tab circled in red" />
+   </a>
 
-This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
-our workshop, so you can clear your screen using the `clear` command. 
+   You now have a shell on an ALICE compute node. You should see a prompt like the one
+   below, with your own username and the name of your node:
 
-~~~
-$ clear
-~~~
-{: .bash}
+   <a href="{{ page.root }}/../fig/alice_rstudio_5_terminal_prompt.png">
+     <img src="{{ page.root }}/../fig/alice_rstudio_5_terminal_prompt.png" alt="RStudio with the Terminal tab open and a bash prompt of the form username@node888" />
+   </a>
 
-This will scroll your screen down to give you a fresh screen and will make it easier to read. 
-You haven't lost any of the information on your screen. If you scroll up, you can see everything that has been output to your screen
-up until this point.
+More details are in the
+[ALICE documentation](https://pubappslu.atlassian.net/wiki/spaces/HPCWIKI/pages/37749098/Accessing+ALICE+or+SHARK+with+a+web-browser+using+Open+OnDemand#For-ALICE-users).
 
 ## Navigating your file system
 
