@@ -29,8 +29,7 @@ were we will be happy to help you!
 > including the 
 > concept of DNA sequencing, nucleotide abbreviations, genome, microbiome, and taxonomy. Participants should bring their own laptops and plan to participate actively.  
 > 
-> To get started, follow the directions in the [Setup](https://carpentries-lab.github.io/metagenomics-workshop/setup.html) tab to 
-> get access to the required software and data for this workshop.
+> To get started, check the [Setup](setup.html) tab for what you need, and then log in to ALICE as described below.
 >
 > ### Logging in to ALICE
 >
@@ -91,9 +90,7 @@ were we will be happy to help you!
 !-->
 
 # Teaching Platform
-This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
-instances. All the software and data used in the workshop are hosted on an Amazon Machine Image (AMI).
-If you want to run your instance of the server used for this workshop, follow the directions in the [Setup](setup.html) tab. 
+This workshop is designed to be run on the ALICE HPC cluster of Leiden University. All the software and data used in the workshop are already prepared on ALICE. See the [Setup](setup.html) tab for what you need to take part.
 
 ## Citation
 Please cite as:
