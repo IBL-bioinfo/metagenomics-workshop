@@ -10,6 +10,8 @@ keypoints:
 - "Enjoy metagenomics."
 ---
 
+Hopefully you have enjoyed the metagenomics workshop and learned how microbial biodiversity is studied. If you have questions or suggestions do not hesitate to ask the instructor of the workshop. If you are interested in this type of work, there is some more information and resources below.
+
 ## Other resources 
 ### Cuatro Ciénegas
 More information about 4 Ciénegas is available in these podcasts 
