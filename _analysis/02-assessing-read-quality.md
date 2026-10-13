@@ -398,47 +398,11 @@ $ cd ~/dc_workshop/results/fastqc_untrimmed_reads/
 
 If we were working on our local computers, we'd be able to look at 
 each of these HTML files by opening them in a web browser. However, these 
-files are currently sitting on our remote AWS instance, where our local 
+files are currently sitting on our remote ALICE machine, where our local 
 computer can't see them. If we are working with the terminal provided by r-studio
 we can either: select the html files and with the secondary click chose the option
 open in a browser or export the files to our local computer as we learned in the 
 Introduction to the Command Line lesson. 
-
-> ## Exercise 3: Downloading files by scp (optional)  
-> 
-> Suppose you only have access to a terminal and there is not a web browser available at the AWS remote machine.
-> The following are the steps needed to download your files to your computer. Observe the third step and answer false/true for each question about
-> the `scp` command.  
-> 1. Open a new terminal on your local computer.
-> 2. Make a new local directory on our computer to store the HTML files   `$ mkdir -p ~/Desktop/fastqc_html`  
-> 3. Transfer our HTML files to our local computer using `scp`.
-> `$ scp dcuser@ec2-34-238-162-94.compute-1.amazonaws.com:~/dc_workshop/results/fastqc_untrimmed_reads/*.html ~/Desktop/fastqc_html`  
-> A) `dcuser` is your local user  
-> B) `ec2-34-238-162-94.compute-1.amazonaws.com` is the address of your remote machine  
-> C) the current adress of the file goes after the second space in the `scp` command.  
-> D) `~/dc_workshop/results/fastqc_untrimmed_reads/*.html` is the path of the file you want to download  
-> E) `~/Desktop/fastqc_html` is a remote path.  
-> F) `:` Divides the host name of your local computer and the path of the file.   
-> 
->> ## Solution
->>  A) False. `dcuser` is your remote user.  
->>  B) True. `ec2-34-238-162-94.compute-1.amazonaws.com` is the adress of your remote machine  
->>  C) False. The current adress of the file goes after the first space in the `scp` command.  
->>  D) True. `~/dc_workshop/results/fastqc_untrimmed_reads/*.html` is the path of the file you want to download in the remote machine. 
->>  E) False. `~/Desktop/fastqc_html` is a local path where your file will be downloaded.
->>  F) False. `:` Divides the host name of a _remote_ computer and the path of the file on the remote computer.   
->>  
->>  You should see a status output like this:
->>  ~~~
->>  JC1A_R1_fastqc.html     100%  253KB 320.0KB/s   00:00     
->>  JC1A_R2_fastqc.html     100%  262KB 390.1KB/s   00:00     
->>  JP4D_R1_fastqc.html     100%  237KB 360.8KB/s   00:00     
->>  JP4D_R2_fastqc.html     100%  244KB 385.2KB/s   00:00
->>  ~~~
->>  {: .output}
-> {: .solution}
-{: .challenge}
-
 
 Now we can open the 4 HTML files. 
 
@@ -446,7 +410,7 @@ Depending on your system,
 you should be able to select and open them all at once via a right-click menu
 in your file browser.
 
-> ## Exercise 4: Discuss the quality of sequencing files
+> ## Exercise 3: Discuss the quality of sequencing files
 > 
 > Discuss your results with a neighbor. Which sample(s) looks the best
 > per base sequence quality? Which sample(s) look the

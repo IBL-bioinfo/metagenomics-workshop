@@ -332,12 +332,8 @@ Importing JP4D.001.krona.input...
 ~~~
 {: .output}  
 
-And finally, open another terminal on your local computer, download the 
-Krona output and open it on a browser.
-~~~
-$ scp dcuser@ec2-3-235-238-92.compute-1.amazonaws.com:~/dc_workshop/taxonomy/JP4D.001.krona.out.html . 
-~~~
-{: .language-bash}  
+And finally, download the Krona output, `~/dc_workshop/taxonomy/JP4D.001.krona.out.html`, to your local computer
+using the RStudio interface, as we did in the Introduction to the Command Line lesson, and open it in a browser.
 You will see a page like this:
 
 <a href="{{ page.root }}/fig/03-06-03.png">
@@ -367,12 +363,8 @@ and needs R and Shiny, but we can try the
 First, we need to download the files needed as inputs in Pavian; this time, we will visualize the 
   assignment of the reads of both samples:
 `JC1A.report` and `JP4D.report`.  
-These files correspond to our Kraken reports. Again in our local 
-machine, let us use the `scp` command.  
-~~~
-$ scp dcuser@ec2-3-235-238-92.compute-1.amazonaws.com:~/dc_workshop/taxonomy/*report . 
-~~~
-{: .language-bash}
+These files correspond to our Kraken reports. They are in the `~/dc_workshop/taxonomy/` directory.
+Again, use the RStudio interface to download them to your local computer, one at a time.
 
 We go to the [Pavian demo WebSite](https://fbreitwieser.shinyapps.io/pavian/), 
 click on Browse, and choose our reports. You need to select both reports at the same time.

@@ -332,46 +332,23 @@ JC1A_R2un.trim.fastq.gz  JP4D_R2un.trim.fastq.gz
 > Now that our samples have gone through quality control, they should perform
 > better on the quality tests run by FastQC. 
 > 
-> Sort the following chunks of code to re-run
-> FastQC on your trimmed FASTQ files and visualize the HTML files
+> Re-run FastQC on your trimmed FASTQ files and visualize the HTML files
 > to see whether your per base sequence quality is higher after
 > trimming. 
-> ~~~
-> $ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/data/trimmed_fastq/*.html ~/Desktop/fastqc_html/trimmed
-> ~~~
-> {: .bash}
-> 
-> ~~~
-> $ fastqc ~/dc_workshop/data/trimmed_fastq/*.fastq*
-> ~~~
-> {: .bash}
-> 
-> ~~~
-> $ mkdir ~/Desktop/fastqc_html/trimmed
-> ~~~
-> {: .bash}
 > 
 >> ## Solution
 >>
->> In your AWS terminal window, do the following:
+>> In your terminal window, do the following:
 >>
 >> ~~~
 >> $ fastqc ~/dc_workshop/data/trimmed_fastq/*.fastq*
 >> ~~~
 >> {: .bash}
 >>
->> In a terminal standing on your local computer, do:
->>
->> ~~~
->> $ mkdir ~/Desktop/fastqc_html/trimmed
->> $ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/data/trimmed_fastq/*.html ~/Desktop/fastqc_html/trimmed
->> ~~~
->> {: .bash}
->> 
->> Then take a look at the html files in your browser.
->> 
->> Remember to replace everything between the `@` and `:` in your scp
->> command with your AWS instance number.
+>> The HTML files are saved in the same directory as the trimmed FASTQ files,
+>> `~/dc_workshop/data/trimmed_fastq`. Then take a look at the HTML files in your browser:
+>> open them from the Files pane in RStudio or export them to your local computer,
+>> as we did for the untrimmed reads.
 >>
 >> After trimming and filtering, our overall quality is much higher, 
 >> we have a distribution of sequence lengths, and more samples pass 

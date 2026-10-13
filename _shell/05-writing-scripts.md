@@ -14,7 +14,6 @@ keypoints:
 - Scripts are a collection of commands executed together.
 - Scripts are executable text files.
 - Nano is a text editor.
-- In a terminal, `scp` transfers information to and from virtual and local computers.
 - R studio remote interface allows the transfer of information between virtual and local computers.
 ---
 
@@ -346,9 +345,7 @@ to transfer files..
 > ## Transferring files scenarios
 > 1. If you are working on your **local** computer, there is no need to transfer files because you already have them locally.   
 > In that case, you only need to know the directory you are working in.  
-> 2. If you are working on a remote machine such as an AWS instance, you can use the `scp` command. In that case, it is *always* easier
-to start the transfer locally. **If you are typing into a terminal, the terminal should not be logged into your instance. It should show your local computer. If you are using a transfer program, it needs to be installed on your local machine, not your instance.**     
-> 3. If you are using the **RStudio server** from the AWS instance, you can transfer files between your local and your remote machine using the graphic interface of RStudio.  
+> 2. If you are using the **RStudio server** on ALICE, you can transfer files between your local and your remote machine using the graphic interface of RStudio.  
 {: .callout}
     
 
@@ -391,11 +388,11 @@ We will follow the next five steps to download files with the RStudio interface.
 5. Your file should now be downloaded to your local computer.  
 
 
-### Upload files to AWS in RStudio  
+### Upload files to ALICE in RStudio  
     
 Now that we learned how to download files from the RStudio interface, 
 we will learn the opposite action, uploading files from your local computer
-to your remote AWS machine.  
+to your remote ALICE machine.  
     
 1. Choose the option 'Upload' in your RStudio interface.
 <a href="{{ page.root }}/fig/02-05-08.png">
@@ -431,38 +428,3 @@ to your remote AWS machine.
      height="300" 
        alt="The uploaded file is shown in the R studio interface" />
 </a>
-    
- 
-### Transferring data between your local and virtual machine with `scp`  
-    
-`scp` stands for 'secure copy protocol' and is a widely used UNIX tool for moving files
-between computers. The simplest way to use `scp` is to run it in your local terminal
-and use it to copy a single file. While `scp <local-file-path> <AWS instance path>` will upload a local file into your AWS instance, 
-`scp <AWS-instance-path> <local-file-path>` will move your file from your remote AWS instance into
-your local computer. The general form of the `scp` command is the following:  
-~~~
-$ scp <file you want to move, local or remote> <path to where I want to move it, local or remote>
-~~~
-{: .bash}
-
-    
-> ## Exercise 3: Uploading data with `scp`  
-> Let us download the text file  `~/data/untrimmed_fastq/scripted_bad_reads.txt` from the remote machine to your local computer.
-> Which of the following commands would download the file?  
-> A)  
-> ~~~
-> $  scp local_file.txt dcuser@ip.address:/home/dcuser/
-> ~~~
-> {: .bash}
-> B)  
-> ~~~
-> $ scp dcuser@ip.address:/home/dcuser/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt. ~/Downloads
-> ~~~
-> {: .bash}
->
-> > ## Solution
-> >    A) False. This command will upload the file `local_file.txt` to the dcuser home directory in your AWS remote machine.  
-> >    B) True. This option downloads the bad reads file in `~/data/scripted_bad_reads.txt` to your local `~/Downloads` directory
-> >       **(make sure you use substitute dcuser@ ip.address with your remote login credentials)**
-> {: .solution}
-{: .challenge}

@@ -188,21 +188,10 @@ The question of how much contamination we can tolerate and how much completeness
 
 > ## Exercise 1: Discuss the quality of the obtained MAGs
 >
-> Fill in the blanks to complete the code you need to download the `quality_JP4D.tsv` to your local computer:
-> ~~~
-> ____ dcuser____ec2-18-207-132-236.compute-1.amazonaws.com____/home/dcuser/dc_workshop/mags/CHECKM/quality_JP4D.tsv ____
-> ~~~
-> {: .bash} 
-> 
->> ## Solution
->>In a terminal that is standing on your local computer, do:
->> ```
->>$ scp dcuser@ec2-18-207-132-236.compute-1.amazonaws.com:/home/dcuser/dc_workshop/mags/CHECKM/quality_JP4D.tsv <the destination directory of your choice>
->> ```
->>{: .bash} 
->>
-> {: .solution}
-> Then open the table in a spreadsheet and discuss with your team which of the parameters in the table you find useful.
+> Download `quality_JP4D.tsv` (in `~/dc_workshop/mags/CHECKM/`) to your local computer using
+> the RStudio interface, as we did in the Introduction to the Command Line lesson.
+> Then open the table in a spreadsheet and discuss with your team which of the parameters
+> in the table you find useful.
 {: .challenge}
 
 {: .bash} 
