@@ -31,7 +31,48 @@ were we will be happy to help you!
 > 
 > To get started, follow the directions in the [Setup](https://carpentries-lab.github.io/metagenomics-workshop/setup.html) tab to 
 > get access to the required software and data for this workshop.
-> 
+>
+> ### Logging in to ALICE
+>
+> If you are following this workshop on the ALICE HPC cluster of Leiden University, you
+> work through the Open OnDemand web portal. The portal is not directly reachable from
+> the internet, so first connect to the university network with eduVPN.
+>
+> 1. **Connect with eduVPN.** Install eduVPN (from the Company Portal on a managed laptop,
+>    or from [eduvpn.org](https://www.eduvpn.org)), choose *Leiden University*, sign in with
+>    your ULCN account, and make sure the connection is active.
+>
+>    <a href="{{ page.root }}/fig/alice_login_1_eduvpn.png">
+>      <img src="{{ page.root }}/fig/alice_login_1_eduvpn.png" alt="eduVPN window showing an active connection to Leiden University" />
+>    </a>
+>
+> 2. **Log in to the portal.** In your browser go to
+>    [https://ood.alice.universiteitleiden.nl/](https://ood.alice.universiteitleiden.nl/)
+>    and enter your ALICE username and password.
+>
+>    <a href="{{ page.root }}/fig/alice_login_2_ondemand.png">
+>      <img src="{{ page.root }}/fig/alice_login_2_ondemand.png" alt="Open OnDemand login page asking for ALICE username and password" />
+>    </a>
+>
+> 3. **Open a shell.** In the top menu choose *Clusters* > *ALICE Shell Access*.
+>
+>    <a href="{{ page.root }}/fig/alice_login_3_shell.png">
+>      <img src="{{ page.root }}/fig/alice_login_3_shell.png" alt="ALICE OnDemand Clusters menu with ALICE Shell Access highlighted" />
+>    </a>
+>
+> 4. **Change your password (first login only).** A terminal opens on a login node. The
+>    first time, accept the host fingerprint by typing `yes`. If you received a temporary
+>    password, type `passwd` at the prompt and follow the instructions to set a new one.
+>
+>    <a href="{{ page.root }}/fig/alice_login_4_password.png">
+>      <img src="{{ page.root }}/fig/alice_login_4_password.png" alt="ALICE login node terminal with the passwd command typed at the prompt" />
+>    </a>
+>
+> More details are in the
+> [ALICE documentation](https://pubappslu.atlassian.net/wiki/spaces/HPCWIKI/pages/37749098/Accessing+ALICE+or+SHARK+with+a+web-browser+using+Open+OnDemand#For-ALICE-users).
+> If eduVPN is not an option, you can instead connect to `nodelogin03` or `nodelogin04`
+> via RDP and open the same address in Firefox there.
+>
 {: .prereq}
 
 > ## Data
