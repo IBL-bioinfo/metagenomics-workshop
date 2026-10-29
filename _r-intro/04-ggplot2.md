@@ -14,6 +14,25 @@ keypoints:
 math: true
 ---
 
+## Setting up the graphics backend
+
+> ## Important: do this before continuing
+>
+> Before we start making plots, you need to change one setting in RStudio, or **your plots will not appear**.
+>
+> 1. Go to **Tools > Global Options...**
+> 2. Click on **Graphics** in the left-hand menu.
+> 3. Under **Graphics Device**, change **Backend** from the default to **Cairo**.
+> 4. Click **OK**.
+>
+> <a href="{{ page.root }}/fig/R-04-00-cairo-backend.png">
+>   <img src="{{ page.root }}/fig/R-04-00-cairo-backend.png" alt="The RStudio Global Options window, open on the Graphics tab, showing the Backend dropdown set to Cairo." />
+> </a>
+> <em> Figure 0. The Graphics tab of RStudio's Global Options, with Backend set to Cairo. <em/>
+>
+> Without this change, the `ggplot2` figures in this episode will fail to render. You only need to do this once per RStudio installation.
+{: .callout}
+
 ## R Libraries
 
 Until now, we have used the basal functions included in the R language. But, R can use groups of functions for diverse purposes. These are called packages or libraries. A *package* is a family of code units (functions, classes, variables) that 
