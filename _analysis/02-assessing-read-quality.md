@@ -177,7 +177,7 @@ Later in our workflow, we'll use another program to filter out poor-quality read
 
 First, let's make available our metagenomics software:
 
-$## Activating an environment  
+## Activating an environment  
 Environments are part of a bioinformatic tendency to do reproducible research; they are a way to share and maintain our programs in their needed versions used for a pipeline with 
 our colleagues and our future self. FastQC is not available by default, but 
 ALICE has an environment prepared for this course. We need to activate 
