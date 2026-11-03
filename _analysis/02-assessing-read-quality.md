@@ -185,25 +185,23 @@ it in order to start using FastQC.
 
 We will use [Conda](https://docs.conda.io/en/latest/) as our environment manager. 
 Conda is an open-source package and environment management system that runs on Windows, 
-macOS and Linux. On ALICE, Conda is available as a *module*, so first we need to load the module `Miniconda3` 
-in the RStudio terminal, and prepare our shell to use it with `conda init`:
+macOS and Linux. On ALICE, before activating the environment we first need to clear any 
+previously loaded modules with `module purge` (otherwise some tools may not work):
 ~~~
-$ module load Miniconda3
-$ conda init
+$ module purge
 ~~~
 {: .bash}
 
-`conda init` asks us to close and re-open the shell for the changes to take effect. We can restart the shell 
-with `exec bash`. The module stays loaded:
-~~~
-$ exec bash
-~~~
-{: .bash}
+> ## Reminder: module purge
+> Run `module purge` at the start of every new session, before activating anything, 
+> even if you already did this earlier in the course. Modules left over from a previous session 
+> can make some tools behave incorrectly.
+{: .callout}
 
 Conda environments are activated with the `conda activate` direction. The environment of this course is located in 
 a shared directory on ALICE, so we activate it by giving its path:  
 ~~~
-$ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/scbioenv
+$ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/metagenomics
 ~~~
 {: .bash}
 

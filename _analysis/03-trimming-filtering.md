@@ -37,6 +37,15 @@ from the specified samples.
 
 ## Trimmomatic options
 
+> ## Reminder: activate your environment
+> If you are starting a new session, run `module purge` first to clear any previously loaded modules (otherwise some tools may not work), then activate the course environment again:
+> ~~~
+> $ module purge
+> $ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/metagenomics
+> ~~~
+> {: .language-bash}
+{: .callout}
+
 Trimmomatic has a variety of options to accomplish its task. 
 If we run the following command, we can see some of its options:
 

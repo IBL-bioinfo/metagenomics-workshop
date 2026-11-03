@@ -66,7 +66,16 @@ the organisms in the sample.
 [Kraken 2](https://ccb.jhu.edu/software/kraken2/) is the newest version of Kraken, 
 a taxonomic classification system using exact k-mer matches to achieve 
 high accuracy and fast classification speeds. `kraken2` is already installed in the **course
-environment** (`scbioenv`), let us have a look at `kraken2` help.  
+environment** (`metagenomics`), let us have a look at `kraken2` help.  
+
+> ## Reminder: activate your environment
+> If you are starting a new session, run `module purge` first to clear any previously loaded modules (otherwise some tools may not work), then activate the course environment again:
+> ~~~
+> $ module purge
+> $ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/metagenomics
+> ~~~
+> {: .language-bash}
+{: .callout}
  
 ~~~  
 $ kraken2  --help

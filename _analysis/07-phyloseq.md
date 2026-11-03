@@ -47,9 +47,10 @@ JC1A.kraken  JC1A.report  JP41.report  JP4D.kraken  JP4D.report  mags_taxonomy
 ~~~
 {: .output}
 
-The `kraken-biom` program is installed inside our `scbioenv` environment, so let us activate it.
+The `kraken-biom` program is installed inside our `metagenomics` environment, so let us activate it. If you are starting a new session, run `module purge` first to clear any previously loaded modules — otherwise some tools may not work.
 ~~~
-$ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/scbioenv
+$ module purge
+$ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/metagenomics
 ~~~
 {: .bash}
 

@@ -42,16 +42,26 @@ coverage levels and the tetranucleotide frequencies they have.
 {: .discussion}
 
 Let us bin the sample we just assembled. The command for running MaxBin is `run_MaxBin.pl`, and the arguments it needs are the FASTA file of the assembly, the FASTQ with the forward and reverse reads, the output directory, and the name. 
+
+> ## Reminder: activate your environment
+> If you are starting a new session, run `module purge` first to clear any previously loaded modules (otherwise some tools may not work), then activate the course environment again:
+> ~~~
+> $ module purge
+> $ conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/metagenomics
+> ~~~
+> {: .language-bash}
+{: .callout}
+
 ~~~
 $ cd ~/dc_workshop/results/assembly_JC1A
 $ mkdir MAXBIN
-$ run_MaxBin.pl -thread 8 -contig JC1A_contigs.fasta -reads ../../data/trimmed_fastq/JC1A_R1.trim.fastq.gz -reads2 ../../data/trimmed_fastq/JC1A_R2.trim.fastq.gz -out MAXBIN/JC1A
+$ run_MaxBin.pl -thread 8 -contig contigs.fasta -reads ../../data/trimmed_fastq/JC1A_R1.trim.fastq.gz -reads2 ../../data/trimmed_fastq/JC1A_R2.trim.fastq.gz -out MAXBIN/JC1A
 ~~~
 {: .bash} 
 ~~~
 MaxBin 2.2.7
 Thread: 12
-Input contig: JC1A_contigs.fasta
+Input contig: contigs.fasta
 Located reads file [../../data/trimmed_fastq/JC1A_R1.trim.fastq.gz]
 Located reads file [../../data/trimmed_fastq/JC1A_R2.trim.fastq.gz]
 out header: MAXBIN/JC1A
@@ -59,7 +69,7 @@ Running Bowtie2 on reads file [../../data/trimmed_fastq/JC1A_R1.trim.fastq.gz]..
 Reading SAM file to estimate abundance values...
 Running Bowtie2 on reads file [../../data/trimmed_fastq/JC1A_R2.trim.fastq.gz]...this may take a while...
 Reading SAM file to estimate abundance values...
-Searching against 107 marker genes to find starting seed contigs for [JC1A_contigs.fasta]...
+Searching against 107 marker genes to find starting seed contigs for [contigs.fasta]...
 Running FragGeneScan....
 Running HMMER hmmsearch....
 Try harder to dig out marker genes from contigs.
@@ -74,14 +84,14 @@ We will perform the binning process with the other sample from the same study th
 ~~~
 $ cd ~/dc_workshop/mags/
 $ mkdir MAXBIN
-$ run_MaxBin.pl -thread 8 -contig JP4D_contigs.fasta -reads ../data/trimmed_fastq/JP4D_R1.trim.fastq.gz -reads2 ../data/trimmed_fastq/JP4D_R2.trim.fastq.gz -out MAXBIN/JP4D
+$ run_MaxBin.pl -thread 8 -contig contigs.fasta -reads ../data/trimmed_fastq/JP4D_R1.trim.fastq.gz -reads2 ../data/trimmed_fastq/JP4D_R2.trim.fastq.gz -out MAXBIN/JP4D
 ~~~
 {: .bash}  
 It will take a few minutes to run. Moreover, it will finish with an output like this:
 
 ~~~
 ========== Job finished ==========
-Yielded 4 bins for contig (scaffold) file JP4D_contigs.fasta
+Yielded 4 bins for contig (scaffold) file contigs.fasta
 
 Here are the output files for this run.
 Please refer to the README file for further details.

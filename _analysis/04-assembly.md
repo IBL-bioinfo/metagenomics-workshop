@@ -117,9 +117,10 @@ Input data:
 
 > ## Activate your environment
 > If you do not have the course environment activated, the previous command should have given you an error. 
-> Before you proceed, activate the environment:
+> Before you proceed, run `module purge` to clear any previously loaded modules (otherwise some tools may not work, especially if this is a new session), then activate the environment:
 > ~~~
-> conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/scbioenv
+> module purge
+> conda activate /zfsstore/courses/2026-2027/Scales_Biodiversity/metagenomics
 > ~~~
 > {: .language-bash}
 {: .callout}
