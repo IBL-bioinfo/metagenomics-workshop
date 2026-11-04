@@ -77,7 +77,7 @@ From this output, we can see that `..` did indeed took us back one level in our 
 You can chain these together to move several levels:
 
 ~~~
-$ cd ../../..
+$ cd ../../
 ~~~
 {: .bash}
 
