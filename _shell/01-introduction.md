@@ -122,11 +122,16 @@ the internet, so first connect to the university network with eduVPN.
      <img src="{{ page.root }}/../fig/alice_rstudio_2_app_form.png" alt="RStudio Server GPU IBL form with the RStudio version, the additional modules and the Slurm partition gpu_ibl" />
    </a>
 
-   Further down, ask your instructor which *Number of hours* to use, leave *Number of
-   tasks* at `1`, and set *Number of CPUs per task* to `2` and *Memory in GB* to `16`.
+   Further down, in the scheduled workshop timeslots, enter 4 hours for *Number of
+   hours*, leave *Number of tasks* at `1`, and set *Number of CPUs per task* to `2`
+   and *Memory in GB* to `16`.
+
+   During the workshop moments, we get priority on processing power, so during those
+   moments set *Slurm reservation to be used for app* to `Scales_Biodiversity`. If you
+   want to work on this outside those hours, select `no reservation` instead.
 
    <a href="{{ page.root }}/../fig/alice_rstudio_3_resources.png">
-     <img src="{{ page.root }}/../fig/alice_rstudio_3_resources.png" alt="RStudio Server GPU IBL form with the number of hours, 1 task, 2 CPUs per task and 16 GB of memory" />
+     <img src="{{ page.root }}/../fig/alice_rstudio_3_resources.png" alt="RStudio Server GPU IBL form with the number of hours, 1 task, 2 CPUs per task, 16 GB of memory and the Slurm reservation set to Scales_Biodiversity" />
    </a>
 
    Then click *Launch* at the bottom of the form. When your session is *Running*, click
