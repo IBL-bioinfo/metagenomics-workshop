@@ -185,7 +185,22 @@ it in order to start using FastQC.
 
 We will use [Conda](https://docs.conda.io/en/latest/) as our environment manager. 
 Conda is an open-source package and environment management system that runs on Windows, 
-macOS and Linux. On ALICE, before activating the environment we first need to clear any 
+macOS and Linux.
+
+> ## First time only: set up Conda
+> The very first time you do this, `conda` is not yet available in your shell. Run the 
+> following once to load Conda and initialize it for future sessions:
+> ~~~
+> $ module load Miniconda3
+> $ conda init
+> $ source .bashrc
+> ~~~
+> {: .bash}
+> After this one-time setup, `conda` will be available automatically in every new session, 
+> and you only need to run `module purge` (below) from then on.
+{: .callout}
+
+On ALICE, before activating the environment we first need to clear any 
 previously loaded modules with `module purge` (otherwise some tools may not work):
 ~~~
 $ module purge
